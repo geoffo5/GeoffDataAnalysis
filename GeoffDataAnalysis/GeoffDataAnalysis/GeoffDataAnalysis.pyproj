@@ -43,6 +43,7 @@
     <Folder Include="GeoffDataAnalysis\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GeoffDataAnalysis\templates\uploaded.html" />
     <Content Include="requirements.txt" />
     <Content Include="GeoffDataAnalysis\static\content\bootstrap.css" />
     <Content Include="GeoffDataAnalysis\static\content\bootstrap.min.css" />
@@ -66,10 +67,7 @@
     <Content Include="GeoffDataAnalysis\static\scripts\respond.js" />
     <Content Include="GeoffDataAnalysis\static\scripts\respond.min.js" />
     <Content Include="GeoffDataAnalysis\static\scripts\_references.js" />
-    <Content Include="GeoffDataAnalysis\templates\about.html" />
-    <Content Include="GeoffDataAnalysis\templates\contact.html" />
     <Content Include="GeoffDataAnalysis\templates\index.html" />
-    <Content Include="GeoffDataAnalysis\templates\layout.html" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
