@@ -6,6 +6,7 @@ from datetime import datetime
 from flask import render_template, request, send_from_directory
 from GeoffDataAnalysis import app
 import nltk
+from analysis import analyse
 
 app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'rtf'])
 app.config['UPLOAD_FOLDER'] = 'C:\ServerFiles'
@@ -23,13 +24,11 @@ def upload():
     fileString = fileBytes.decode("latin-1")
     fileString = toLower(fileString)
     wordList = wordSplit(fileString)
-    print(wordList)
+    analyse(wordList)
     return render_template('uploaded.html')
 
 
 def wordSplit(fileString):
-    
-
     delimiters = [' ', ',', '.', '"', '#']
     wordList = ['']
     i = 0
