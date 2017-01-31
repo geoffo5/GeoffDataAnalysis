@@ -7,6 +7,8 @@ from flask import render_template, request, send_from_directory
 from GeoffDataAnalysis import app
 import nltk
 from analysis import analyse
+import hashlib
+import hmac
 
 app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'rtf'])
 app.config['UPLOAD_FOLDER'] = 'C:\ServerFiles'
@@ -22,9 +24,11 @@ def upload():
     file = request.files['file']
     fileBytes = file.read()
     fileString = fileBytes.decode("latin-1")
+    id = sha_hash = hashlib.sha256(bytes(fileString, encoding='utf-8')).hexdigest()
+    
     fileString = toLower(fileString)
     wordList = wordSplit(fileString)
-    analyse(wordList)
+    analyse(wordList, id)
     return render_template('uploaded.html')
 
 

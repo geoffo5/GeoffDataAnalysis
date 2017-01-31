@@ -4740,3 +4740,169 @@ C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Micro
 2017-01-26T19:26:34: [WARNING] Library was set explicitly - skipping path detection
 2017-01-26T19:26:34: IncludeModulesFromModulePath = win32com
 2017-01-26T19:26:35: Deleting 0 files
+
+2017-01-30T20:13:54: Start analysis
+2017-01-30T20:13:55: [WARNING] Library was set explicitly - skipping path detection
+2017-01-30T20:13:55: IncludeModulesFromModulePath = win32com
+2017-01-30T20:13:55: Deleting 0 files
+2017-01-30T20:13:56: Scraping bson._cbson
+2017-01-30T20:13:56: Command: C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape bson._cbson C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\.ptvs\bson\bson._cbson
+2017-01-30T20:13:56: Scraping pymongo._cmessage
+2017-01-30T20:13:56: Command: C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Scripts\python.exe "C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\Microsoft\Python Tools for Visual Studio\2.2\ExtensionScraper.py" scrape pymongo._cmessage C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\.ptvs\pymongo\pymongo._cmessage
+2017-01-30T20:13:56: Scraped 2 files
+2017-01-30T20:13:56: astropy.CallDepth = 0
+2017-01-30T20:13:56: matplotlib.CallDepth = 3
+2017-01-30T20:13:56: pandas.CallDepth = 0
+2017-01-30T20:13:56: sympy.CallDepth = 0
+2017-01-30T20:13:56: Start group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson" with 18 files
+2017-01-30T20:13:57: Parsing "bson.binary" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\binary.py")
+2017-01-30T20:13:57: Parsing "bson.code" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\code.py")
+2017-01-30T20:13:57: Parsing "bson.codec_options" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\codec_options.py")
+2017-01-30T20:13:57: Parsing "bson.dbref" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\dbref.py")
+2017-01-30T20:13:57: Parsing "bson.decimal128" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\decimal128.py")
+2017-01-30T20:13:57: Parsing "bson.errors" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\errors.py")
+2017-01-30T20:13:57: Parsing "bson.int64" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\int64.py")
+2017-01-30T20:13:57: Parsing "bson.json_util" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\json_util.py")
+2017-01-30T20:13:57: Parsing "bson.max_key" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\max_key.py")
+2017-01-30T20:13:57: Parsing "bson.min_key" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\min_key.py")
+2017-01-30T20:13:57: Parsing "bson.objectid" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\objectid.py")
+2017-01-30T20:13:57: Parsing "bson.py3compat" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\py3compat.py")
+2017-01-30T20:13:57: Parsing "bson.raw_bson" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\raw_bson.py")
+2017-01-30T20:13:57: Parsing "bson.regex" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\regex.py")
+2017-01-30T20:13:57: Parsing "bson.son" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\son.py")
+2017-01-30T20:13:57: Parsing "bson.timestamp" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\timestamp.py")
+2017-01-30T20:13:57: Parsing "bson.tz_util" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\tz_util.py")
+2017-01-30T20:13:57: Parsing "bson" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson\__init__.py")
+2017-01-30T20:13:57: Parsing complete
+2017-01-30T20:13:57: Analyzing "bson.binary"
+2017-01-30T20:13:57: Analyzing "bson.code"
+2017-01-30T20:13:57: Analyzing "bson.codec_options"
+2017-01-30T20:13:57: Analyzing "bson.dbref"
+2017-01-30T20:13:57: Analyzing "bson.decimal128"
+2017-01-30T20:13:57: Analyzing "bson.errors"
+2017-01-30T20:13:57: Analyzing "bson.int64"
+2017-01-30T20:13:57: Analyzing "bson.json_util"
+2017-01-30T20:13:57: Analyzing "bson.max_key"
+2017-01-30T20:13:57: Analyzing "bson.min_key"
+2017-01-30T20:13:57: Analyzing "bson.objectid"
+2017-01-30T20:13:57: Analyzing "bson.py3compat"
+2017-01-30T20:13:57: Analyzing "bson.raw_bson"
+2017-01-30T20:13:57: Analyzing "bson.regex"
+2017-01-30T20:13:57: Analyzing "bson.son"
+2017-01-30T20:13:57: Analyzing "bson.timestamp"
+2017-01-30T20:13:57: Analyzing "bson.tz_util"
+2017-01-30T20:13:57: Analyzing "bson"
+2017-01-30T20:13:57: Starting analysis of 18 modules
+2017-01-30T20:14:10: Analysis complete
+2017-01-30T20:14:10: Saving group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson"
+2017-01-30T20:14:10: End of group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\bson"
+2017-01-30T20:14:10: Start group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\gridfs" with 3 files
+2017-01-30T20:14:11: Parsing "gridfs.errors" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\gridfs\errors.py")
+2017-01-30T20:14:11: Parsing "gridfs.grid_file" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\gridfs\grid_file.py")
+2017-01-30T20:14:11: Parsing "gridfs" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\gridfs\__init__.py")
+2017-01-30T20:14:11: Parsing complete
+2017-01-30T20:14:11: Analyzing "gridfs.errors"
+2017-01-30T20:14:11: Analyzing "gridfs.grid_file"
+2017-01-30T20:14:11: Analyzing "gridfs"
+2017-01-30T20:14:11: Starting analysis of 3 modules
+2017-01-30T20:14:13: Analysis complete
+2017-01-30T20:14:13: Saving group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\gridfs"
+2017-01-30T20:14:13: End of group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\gridfs"
+2017-01-30T20:14:13: Start group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo" with 43 files
+2017-01-30T20:14:14: Parsing "pymongo.auth" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\auth.py")
+2017-01-30T20:14:14: Parsing "pymongo.bulk" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\bulk.py")
+2017-01-30T20:14:14: Parsing "pymongo.client_options" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\client_options.py")
+2017-01-30T20:14:14: Parsing "pymongo.collation" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\collation.py")
+2017-01-30T20:14:14: Parsing "pymongo.collection" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\collection.py")
+2017-01-30T20:14:14: Parsing "pymongo.command_cursor" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\command_cursor.py")
+2017-01-30T20:14:14: Parsing "pymongo.common" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\common.py")
+2017-01-30T20:14:14: Parsing "pymongo.cursor" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\cursor.py")
+2017-01-30T20:14:14: Parsing "pymongo.cursor_manager" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\cursor_manager.py")
+2017-01-30T20:14:14: Parsing "pymongo.database" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\database.py")
+2017-01-30T20:14:14: Parsing "pymongo.errors" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\errors.py")
+2017-01-30T20:14:14: Parsing "pymongo.helpers" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\helpers.py")
+2017-01-30T20:14:14: Parsing "pymongo.ismaster" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\ismaster.py")
+2017-01-30T20:14:14: Parsing "pymongo.max_staleness_selectors" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\max_staleness_selectors.py")
+2017-01-30T20:14:14: Parsing "pymongo.message" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\message.py")
+2017-01-30T20:14:14: Parsing "pymongo.mongo_client" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\mongo_client.py")
+2017-01-30T20:14:14: Parsing "pymongo.mongo_replica_set_client" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\mongo_replica_set_client.py")
+2017-01-30T20:14:14: Parsing "pymongo.monitor" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\monitor.py")
+2017-01-30T20:14:14: Parsing "pymongo.monitoring" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\monitoring.py")
+2017-01-30T20:14:14: Parsing "pymongo.monotonic" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\monotonic.py")
+2017-01-30T20:14:14: Parsing "pymongo.network" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\network.py")
+2017-01-30T20:14:14: Parsing "pymongo.operations" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\operations.py")
+2017-01-30T20:14:14: Parsing "pymongo.periodic_executor" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\periodic_executor.py")
+2017-01-30T20:14:14: Parsing "pymongo.pool" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\pool.py")
+2017-01-30T20:14:14: Parsing "pymongo.read_concern" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\read_concern.py")
+2017-01-30T20:14:14: Parsing "pymongo.read_preferences" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\read_preferences.py")
+2017-01-30T20:14:14: Parsing "pymongo.response" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\response.py")
+2017-01-30T20:14:14: Parsing "pymongo.results" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\results.py")
+2017-01-30T20:14:14: Parsing "pymongo.server" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\server.py")
+2017-01-30T20:14:14: Parsing "pymongo.server_description" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\server_description.py")
+2017-01-30T20:14:14: Parsing "pymongo.server_selectors" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\server_selectors.py")
+2017-01-30T20:14:14: Parsing "pymongo.server_type" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\server_type.py")
+2017-01-30T20:14:14: Parsing "pymongo.settings" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\settings.py")
+2017-01-30T20:14:14: Parsing "pymongo.son_manipulator" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\son_manipulator.py")
+2017-01-30T20:14:14: Parsing "pymongo.ssl_context" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\ssl_context.py")
+2017-01-30T20:14:14: Parsing "pymongo.ssl_match_hostname" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\ssl_match_hostname.py")
+2017-01-30T20:14:14: Parsing "pymongo.ssl_support" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\ssl_support.py")
+2017-01-30T20:14:14: Parsing "pymongo.thread_util" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\thread_util.py")
+2017-01-30T20:14:14: Parsing "pymongo.topology" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\topology.py")
+2017-01-30T20:14:14: Parsing "pymongo.topology_description" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\topology_description.py")
+2017-01-30T20:14:14: Parsing "pymongo.uri_parser" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\uri_parser.py")
+2017-01-30T20:14:14: Parsing "pymongo.write_concern" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\write_concern.py")
+2017-01-30T20:14:14: Parsing "pymongo" ("C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo\__init__.py")
+2017-01-30T20:14:14: Parsing complete
+2017-01-30T20:14:14: Analyzing "pymongo.auth"
+2017-01-30T20:14:14: Analyzing "pymongo.bulk"
+2017-01-30T20:14:14: Analyzing "pymongo.client_options"
+2017-01-30T20:14:14: Analyzing "pymongo.collation"
+2017-01-30T20:14:14: Analyzing "pymongo.collection"
+2017-01-30T20:14:14: Analyzing "pymongo.command_cursor"
+2017-01-30T20:14:14: Analyzing "pymongo.common"
+2017-01-30T20:14:14: Analyzing "pymongo.cursor"
+2017-01-30T20:14:14: Analyzing "pymongo.cursor_manager"
+2017-01-30T20:14:14: Analyzing "pymongo.database"
+2017-01-30T20:14:14: Analyzing "pymongo.errors"
+2017-01-30T20:14:14: Analyzing "pymongo.helpers"
+2017-01-30T20:14:14: Analyzing "pymongo.ismaster"
+2017-01-30T20:14:14: Analyzing "pymongo.max_staleness_selectors"
+2017-01-30T20:14:14: Analyzing "pymongo.message"
+2017-01-30T20:14:14: Analyzing "pymongo.mongo_client"
+2017-01-30T20:14:14: Analyzing "pymongo.mongo_replica_set_client"
+2017-01-30T20:14:14: Analyzing "pymongo.monitor"
+2017-01-30T20:14:14: Analyzing "pymongo.monitoring"
+2017-01-30T20:14:14: Analyzing "pymongo.monotonic"
+2017-01-30T20:14:14: Analyzing "pymongo.network"
+2017-01-30T20:14:14: Analyzing "pymongo.operations"
+2017-01-30T20:14:14: Analyzing "pymongo.periodic_executor"
+2017-01-30T20:14:14: Analyzing "pymongo.pool"
+2017-01-30T20:14:14: Analyzing "pymongo.read_concern"
+2017-01-30T20:14:14: Analyzing "pymongo.read_preferences"
+2017-01-30T20:14:14: Analyzing "pymongo.response"
+2017-01-30T20:14:14: Analyzing "pymongo.results"
+2017-01-30T20:14:14: Analyzing "pymongo.server"
+2017-01-30T20:14:14: Analyzing "pymongo.server_description"
+2017-01-30T20:14:14: Analyzing "pymongo.server_selectors"
+2017-01-30T20:14:14: Analyzing "pymongo.server_type"
+2017-01-30T20:14:14: Analyzing "pymongo.settings"
+2017-01-30T20:14:14: Analyzing "pymongo.son_manipulator"
+2017-01-30T20:14:14: Analyzing "pymongo.ssl_context"
+2017-01-30T20:14:14: Analyzing "pymongo.ssl_match_hostname"
+2017-01-30T20:14:14: Analyzing "pymongo.ssl_support"
+2017-01-30T20:14:14: Analyzing "pymongo.thread_util"
+2017-01-30T20:14:14: Analyzing "pymongo.topology"
+2017-01-30T20:14:14: Analyzing "pymongo.topology_description"
+2017-01-30T20:14:14: Analyzing "pymongo.uri_parser"
+2017-01-30T20:14:14: Analyzing "pymongo.write_concern"
+2017-01-30T20:14:14: Analyzing "pymongo"
+2017-01-30T20:14:14: Starting analysis of 43 modules
+2017-01-30T20:14:19: Analysis complete
+2017-01-30T20:14:19: Saving group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo"
+2017-01-30T20:14:21: End of group "C:\Users\geoff\Source\Repos\GeoffDataAnalysis\GeoffDataAnalysis\GeoffDataAnalysis\env\Lib\site-packages\pymongo"
+2017-01-30T20:14:22: Deleting 0 files
+
+2017-01-30T20:15:17: Start analysis
+2017-01-30T20:15:17: [WARNING] Library was set explicitly - skipping path detection
+2017-01-30T20:15:17: IncludeModulesFromModulePath = win32com
+2017-01-30T20:15:19: Deleting 0 files
