@@ -9,6 +9,7 @@ import nltk
 from analysis import analyse
 import hashlib
 import hmac
+import GeoffDataAnalysis.database
 
 app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'rtf'])
 app.config['UPLOAD_FOLDER'] = 'C:\ServerFiles'
@@ -25,10 +26,12 @@ def upload():
     fileBytes = file.read()
     fileString = fileBytes.decode("latin-1")
     id = sha_hash = hashlib.sha256(bytes(fileString, encoding='utf-8')).hexdigest()
-    
+    fileExists = GeoffDataAnalysis.database.checkFileExists(id)
     fileString = toLower(fileString)
     wordList = wordSplit(fileString)
-    analyse(wordList, id)
+    analysed = analyse(wordList, id)
+    for k in analysed:
+        print(analysed[k][1][1])
     return render_template('uploaded.html')
 
 

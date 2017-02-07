@@ -1,4 +1,5 @@
 import json
+import GeoffDataAnalysis.database
 
 def analyse(wordList, id):
     scores = {}
@@ -21,4 +22,5 @@ def analyse(wordList, id):
                     temp.append(file[word][i])
                 scores[word] = [1, temp]
                 temp = []
-    print(scores)
+    #GeoffDataAnalysis.database.addToDatabase(scores,id)
+    return scores
