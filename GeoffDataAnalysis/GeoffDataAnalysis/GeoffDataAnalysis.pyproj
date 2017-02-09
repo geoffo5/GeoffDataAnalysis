@@ -33,7 +33,7 @@
     <Compile Include="analysis.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="GeoffDataAnalysis\database.py">
+    <Compile Include="database.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="runserver.py" />
@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="GeoffDataAnalysis\templates\uploaded.html" />
+    <Content Include="GeoffDataAnalysis\templates\advanced.html" />
     <Content Include="requirements.txt" />
     <Content Include="GeoffDataAnalysis\static\content\bootstrap.css" />
     <Content Include="GeoffDataAnalysis\static\content\bootstrap.min.css" />

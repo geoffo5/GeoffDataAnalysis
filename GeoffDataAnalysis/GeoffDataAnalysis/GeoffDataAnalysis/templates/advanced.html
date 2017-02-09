@@ -1,0 +1,31 @@
+﻿<html>
+<head><title>Advanced Analysis</title></head>
+
+<body>
+    <table border="1">
+        <thead>
+            <tr>
+                <td>Rank</td>
+                <td>Word</td>
+                <td>Frequency Count</td>
+                <td>Association</td>
+                <td>Association Score</td>
+                <td>Rank Score</td>
+            </tr>
+        </thead>
+        {% for d in fullFile %}
+        <tr>
+            <td>{{loop.index}}</td>
+            <td>{{d['word']}}</td>
+            <td>{{d['freq']}}</td>
+            <td>{{d['association'][0]}}</td>
+            <td>{{d['association'][1]}}</td>
+            <td>{{d['rank']}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+</body>
+
+</html>

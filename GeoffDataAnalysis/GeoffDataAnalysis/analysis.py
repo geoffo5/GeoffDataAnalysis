@@ -1,5 +1,6 @@
 import json
-import GeoffDataAnalysis.database
+import database
+import operator
 
 def analyse(wordList, id):
     scores = {}
@@ -22,6 +23,42 @@ def analyse(wordList, id):
                     temp.update(file[word][i])
                 scores[word] = [1, temp]
                 temp = {}
-    GeoffDataAnalysis.database.addToDatabase(scores,id)
-    scores = GeoffDataAnalysis.database.retrieveFile(id)
+    database.addToDatabase(scores,id)
+    scores = database.retrieveFile(id)
     return scores
+
+def advancedAnalysis(file, assoc, id):
+    keys = []
+    scores = []
+    temp = {}
+
+    for k in file['basic'].keys():
+        if file['basic'][k][1] == 'Word not Found':
+            keys.append(k)
+    for k in keys:
+        del file['basic'][k]
+
+    file = intConvert(file)
+    
+    for k in file['basic']:
+        temp['word'] = k
+        temp['freq'] = file['basic'][k][0]
+        sortedList = sorted(file['basic'][k][1].items(), key=operator.itemgetter(1))
+        temp['association'] = sortedList
+        scores.append(temp)
+        temp = {}
+    database.updateDatabase(scores,id)
+    file = database.retrieveFile(id)
+    return file
+
+
+def intConvert(file):
+    for k in file['basic']:  
+        for key in file['basic'][k][1]:
+            file['basic'][k][1][key] = int(file['basic'][k][1][key])
+
+    return file
+            
+
+                
+    

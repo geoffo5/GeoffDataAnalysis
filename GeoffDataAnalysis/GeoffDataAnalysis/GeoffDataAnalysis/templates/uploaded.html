@@ -1,6 +1,13 @@
 ﻿<html>
 <head><title>File Analysis</title></head>
 <body>
+    <form action="/advanced" method="post">
+        Score by First Association<input type="radio" name="assoc" value="2" checked /><br />
+        Score by Second Association<input type="radio" name="assoc" value="1" /><br />
+        Score by Third Association<input type="radio" name="assoc" value="0" /><br />
+        <input type="submit" value="Do Advanced Analysis" />
+    </form>
+
     <table border="1">
         <thead>
             <tr>
@@ -14,11 +21,11 @@
                 <td>Score 3</td>
             </tr>
         </thead>
-        {% for k in fullFile['file'] %}
+        {% for k in fullFile['basic'] %}
         <tr>
         <td>{{k}}</td>
-        <td>{{fullFile['file'][k][0]}}</td>
-            {% if fullFile['file'][k][1] is not mapping %}
+        <td>{{fullFile['basic'][k][0]}}</td>
+            {% if fullFile['basic'][k][1] is not mapping %}
                 <td>Word Not Found</td>
                 <td>Word Not Found</td>
                 <td>Word Not Found</td>
@@ -26,9 +33,9 @@
                 <td>Word Not Found</td>
                 <td>Word Not Found</td>
             {% else %}
-                {% for key in fullFile['file'][k][1] %}
+                {% for key in fullFile['basic'][k][1] %}
                     <td>{{key}}</td>
-                    <td>{{fullFile['file'][k][1][key]}}</td>
+                    <td>{{fullFile['basic'][k][1][key]}}</td>
                 {% endfor %}
             {% endif %}
         {% endfor %}
