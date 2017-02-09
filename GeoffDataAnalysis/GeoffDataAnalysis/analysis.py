@@ -3,7 +3,7 @@ import GeoffDataAnalysis.database
 
 def analyse(wordList, id):
     scores = {}
-    temp = []
+    temp = {}
     file = {}
     with open("ea-thesaurus-lower.json") as fileLoad:
         file = json.load(fileLoad)
@@ -19,8 +19,9 @@ def analyse(wordList, id):
                 scores[word][0] = scores[word][0] + 1
             else:
                 for i in range(0,3):
-                    temp.append(file[word][i])
+                    temp.update(file[word][i])
                 scores[word] = [1, temp]
-                temp = []
-    #GeoffDataAnalysis.database.addToDatabase(scores,id)
+                temp = {}
+    GeoffDataAnalysis.database.addToDatabase(scores,id)
+    scores = GeoffDataAnalysis.database.retrieveFile(id)
     return scores

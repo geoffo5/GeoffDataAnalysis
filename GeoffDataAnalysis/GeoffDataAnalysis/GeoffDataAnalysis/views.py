@@ -11,9 +11,6 @@ import hashlib
 import hmac
 import GeoffDataAnalysis.database
 
-app.config['ALLOWED_EXTENSIONS'] = set(['txt', 'rtf'])
-app.config['UPLOAD_FOLDER'] = 'C:\ServerFiles'
-
 
 @app.route('/')
 @app.route('/home')
@@ -27,16 +24,19 @@ def upload():
     fileString = fileBytes.decode("latin-1")
     id = sha_hash = hashlib.sha256(bytes(fileString, encoding='utf-8')).hexdigest()
     fileExists = GeoffDataAnalysis.database.checkFileExists(id)
-    fileString = toLower(fileString)
-    wordList = wordSplit(fileString)
-    analysed = analyse(wordList, id)
-    for k in analysed:
-        print(analysed[k][1][1])
-    return render_template('uploaded.html')
+    if fileExists:
+        analysed = GeoffDataAnalysis.database.retrieveFile(id)
+    else:
+        fileString = toLower(fileString)
+        wordList = wordSplit(fileString)
+        analysed = analyse(wordList, id)
+    #for k in analysed['file']:
+    #    print(k)
+    return render_template('uploaded.html', fullFile = analysed)
 
 
 def wordSplit(fileString):
-    delimiters = [' ', ',', '.', '"', '#']
+    delimiters = [' ', ',', '.', '"', '#','/',"\\"]
     wordList = ['']
     i = 0
     for char in fileString:

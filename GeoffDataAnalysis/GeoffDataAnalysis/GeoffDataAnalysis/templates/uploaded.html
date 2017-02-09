@@ -14,7 +14,24 @@
                 <td>Score 3</td>
             </tr>
         </thead>
-        
+        {% for k in fullFile['file'] %}
+        <tr>
+        <td>{{k}}</td>
+        <td>{{fullFile['file'][k][0]}}</td>
+            {% if fullFile['file'][k][1] is not mapping %}
+                <td>Word Not Found</td>
+                <td>Word Not Found</td>
+                <td>Word Not Found</td>
+                <td>Word Not Found</td>
+                <td>Word Not Found</td>
+                <td>Word Not Found</td>
+            {% else %}
+                {% for key in fullFile['file'][k][1] %}
+                    <td>{{key}}</td>
+                    <td>{{fullFile['file'][k][1][key]}}</td>
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
         
     </table>
 
