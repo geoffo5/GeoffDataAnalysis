@@ -25,6 +25,9 @@ def upload():
     file = request.files['file']
     fileBytes = file.read()
     fileString = fileBytes.decode("latin-1")
+    print(fileString)
+    if fileString == '':
+        return render_template('index.html', message = "File was empty.  Please upload a different file")
     id = sha_hash = hashlib.sha256(bytes(fileString, encoding='utf-8')).hexdigest()
     fileExists = database.checkFileExists(id)
     if fileExists:
@@ -34,7 +37,6 @@ def upload():
         wordList = wordSplit(fileString)
         analysed = analysis.analyse(wordList, id)
     session['file'] = id
-    print(analysed)
     return render_template('uploaded.html', fullFile = analysed['basic'])
 
 @app.route('/advanced', methods=['POST'])

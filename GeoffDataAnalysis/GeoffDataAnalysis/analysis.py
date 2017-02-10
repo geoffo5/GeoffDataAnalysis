@@ -26,7 +26,6 @@ def analyse(wordList, id):
   
     database.addToDatabase(scores,id)
     scores = database.retrieveFile(id)
-    print
     return scores
 
 def advancedAnalysis(file, assoc, id):
