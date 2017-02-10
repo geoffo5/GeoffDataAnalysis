@@ -23,8 +23,10 @@ def analyse(wordList, id):
                     temp.update(file[word][i])
                 scores[word] = [1, temp]
                 temp = {}
+  
     database.addToDatabase(scores,id)
     scores = database.retrieveFile(id)
+    print
     return scores
 
 def advancedAnalysis(file, assoc, id):
@@ -62,3 +64,15 @@ def intConvert(file):
 
                 
     
+ #if word not in file and word in scores and scores[word][1] == 'Word not Found':
+        #    scores[word][0] = scores[word][0] + 1
+        #elif word not in file:
+        #    scores[word] = [1, 'Word not Found']
+        #else:
+        #    if word in scores:
+        #        scores[word][0] = scores[word][0] + 1
+        #    else:
+        #        for i in range(0,3):
+        #            temp.update(file[word][i])
+        #        scores[word] = [1, temp]
+        #        temp = {}

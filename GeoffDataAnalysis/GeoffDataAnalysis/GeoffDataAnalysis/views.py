@@ -4,7 +4,6 @@ Routes and views for the flask application.
 import re
 from datetime import datetime
 from flask import render_template, request, send_from_directory, session
-from GeoffDataAnalysis import app
 import nltk
 import analysis
 import hashlib
@@ -12,8 +11,9 @@ import hmac
 import database
 import operator
 import json
+from GeoffDataAnalysis import app
 
-app.secret_key = "MySecretKey"
+app.config['SECRET_KEY'] = "MySecretKey"
 
 @app.route('/')
 @app.route('/home')
@@ -34,6 +34,7 @@ def upload():
         wordList = wordSplit(fileString)
         analysed = analysis.analyse(wordList, id)
     session['file'] = id
+    print(analysed)
     return render_template('uploaded.html', fullFile = analysed['basic'])
 
 @app.route('/advanced', methods=['POST'])
