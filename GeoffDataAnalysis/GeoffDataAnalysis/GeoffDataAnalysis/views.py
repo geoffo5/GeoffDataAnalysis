@@ -34,7 +34,7 @@ def upload():
         wordList = wordSplit(fileString)
         analysed = analysis.analyse(wordList, id)
     session['file'] = id
-    return render_template('uploaded.html', fullFile = analysed)
+    return render_template('uploaded.html', fullFile = analysed['basic'])
 
 @app.route('/advanced', methods=['POST'])
 def advanced():
@@ -42,9 +42,9 @@ def advanced():
     file = database.retrieveFile(id)
     assoc = request.form['assoc']
     assoc = int(assoc)
-    file = analysis.advancedAnalysis(file, assoc, id)
+    if 'advanced' not in file.keys():
+        file = analysis.advancedAnalysis(file, assoc, id)
     file = getCorrectAssociation(file['advanced'], assoc)
-    print(file)
     return render_template('advanced.html', fullFile = file)
 
 
